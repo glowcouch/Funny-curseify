@@ -17,12 +17,8 @@ def curseify(string):
     for i in range(0, len(words)):
         if str(words[i]).lower() == "you" and str(words[i+1]).lower() == "are" and str(words[i+2]).lower() == "a":
             for i2 in range(i+3, len(words)):
-                if "." in words[i2]:
-                    words[i2] = "."
-                else:
-                    # words.remove(i2)
-                    words[i2] = ""
-            words[i+3] = "son of a monkey"
+                words[i2] = ""
+            words[i+3] = "son of a monkey."
 
     for i in range(0, len(words)):
         output += words[i] + " "
