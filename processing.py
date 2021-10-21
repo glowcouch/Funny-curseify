@@ -15,9 +15,10 @@ def curseify(string):
 
     # add son of a monkey to you are a
     for i in range(0, len(words)):
-        if words[i] == "you" & words[i+1] == "are" & words[i+2] == "a":
+        if words[i] == "you" and words[i+1] == "are" and words[i+2] == "a":
             for i2 in range(i, len(words) - i):
-                
+                words[i2] = ""
+            words[i+3] = "son of a monkey"
     for i in range(0, len(words)):
         output += words[i] + " "
     return output
