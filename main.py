@@ -1,3 +1,4 @@
 import processing
 
-print(processing.curseify(input("type a sentance: ")))
+while True:
+    print(processing.curseify(input("type a sentance: ")))
