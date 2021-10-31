@@ -5,9 +5,9 @@ def replaceWithInArray(array, replace, replaceWith):
     return(array)
 
 
-def curseify(string):
+def curseify(sentence):
 
-    words = string.split(" ")
+    words = sentence.split(" ")
     output = ""
 
     # replace all instances of oops with balderdash
